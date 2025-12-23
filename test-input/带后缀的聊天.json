@@ -1,0 +1,11 @@
+{
+  "chunkedPrompt": {
+    "chunks": [
+      {
+        "role": "user",
+        "text": "测试带后缀的文件",
+        "tokenCount": 5
+      }
+    ]
+  }
+}

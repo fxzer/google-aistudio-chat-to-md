@@ -1,0 +1,11 @@
+{
+  "chunkedPrompt": {
+    "chunks": [
+      {
+        "role": "user",
+        "text": "点号测试",
+        "tokenCount": 5
+      }
+    ]
+  }
+}

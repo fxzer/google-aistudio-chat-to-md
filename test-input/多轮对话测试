@@ -1,0 +1,36 @@
+{
+  "chunkedPrompt": {
+    "chunks": [
+      {
+        "role": "user",
+        "text": "第一个问题",
+        "tokenCount": 5
+      },
+      {
+        "role": "model",
+        "text": "第一个回答",
+        "tokenCount": 5
+      },
+      {
+        "role": "user",
+        "text": "第二个问题",
+        "tokenCount": 5
+      },
+      {
+        "role": "model",
+        "text": "第二个回答",
+        "tokenCount": 5
+      },
+      {
+        "role": "user",
+        "text": "第三个问题",
+        "tokenCount": 5
+      },
+      {
+        "role": "model",
+        "text": "第三个回答",
+        "tokenCount": 5
+      }
+    ]
+  }
+}

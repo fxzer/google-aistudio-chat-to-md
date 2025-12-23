@@ -1,0 +1,26 @@
+# 原始文件和目录
+Google AI Studio/
+Google AI Studio MD/
+main.js
+custom-output.md
+relative-path-test.md
+some-dir.md
+
+# 开发文件
+.git/
+.gitignore
+.idea/
+.vscode/
+*.log
+
+# 测试文件
+test/
+test-input/
+test-output/
+nested-output/
+*.test.js
+test-setup.js
+
+# 文档（README 除外）
+docs/
+CONTRIBUTING.md

@@ -1,0 +1,16 @@
+{
+  "chunkedPrompt": {
+    "chunks": [
+      {
+        "role": "user",
+        "text": "第一行\n第二行\n第三行",
+        "tokenCount": 10
+      },
+      {
+        "role": "model",
+        "text": "- 列表1\n- 列表2\n- 列表3",
+        "tokenCount": 15
+      }
+    ]
+  }
+}

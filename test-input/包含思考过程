@@ -1,0 +1,22 @@
+{
+  "chunkedPrompt": {
+    "chunks": [
+      {
+        "role": "user",
+        "text": "解释什么是量子计算",
+        "tokenCount": 10
+      },
+      {
+        "role": "think",
+        "isThought": true,
+        "text": "用户想了解量子计算，我需要用简单易懂的方式解释...",
+        "tokenCount": 20
+      },
+      {
+        "role": "model",
+        "text": "量子计算是利用量子力学原理进行计算的技术...",
+        "tokenCount": 30
+      }
+    ]
+  }
+}

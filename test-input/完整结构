@@ -1,0 +1,15 @@
+{
+  "runSettings": {
+    "model": "gemini-pro"
+  },
+  "systemInstruction": "你是一个有用的助手",
+  "chunkedPrompt": {
+    "chunks": [
+      {
+        "role": "user",
+        "text": "测试完整结构",
+        "tokenCount": 5
+      }
+    ]
+  }
+}

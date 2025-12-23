@@ -1,0 +1,11 @@
+{
+  "chunkedPrompt": {
+    "chunks": [
+      {
+        "role": "user",
+        "text": "隐藏文件",
+        "tokenCount": 5
+      }
+    ]
+  }
+}

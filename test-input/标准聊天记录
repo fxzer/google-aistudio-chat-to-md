@@ -1,0 +1,16 @@
+{
+  "chunkedPrompt": {
+    "chunks": [
+      {
+        "role": "user",
+        "text": "你好，这是一个测试消息。",
+        "tokenCount": 10
+      },
+      {
+        "role": "model",
+        "text": "你好！这是AI的回复。",
+        "tokenCount": 8
+      }
+    ]
+  }
+}

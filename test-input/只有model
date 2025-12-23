@@ -1,0 +1,11 @@
+{
+  "chunkedPrompt": {
+    "chunks": [
+      {
+        "role": "model",
+        "text": "这是一个只有AI回复的聊天",
+        "tokenCount": 10
+      }
+    ]
+  }
+}
