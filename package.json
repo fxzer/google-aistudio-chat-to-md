@@ -4,7 +4,7 @@
   "description": "Convert Google AI Studio chat records to Markdown format",
   "main": "lib/index.js",
   "bin": {
-    "gemini-tomd": "./bin/cli.js"
+    "gemini-tomd": "bin/cli.js"
   },
   "scripts": {
     "test": "node bin/cli.js"
@@ -28,6 +28,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/fxzer/google-aistudio-chat-to-md.git"
+    "url": "git+https://github.com/fxzer/google-aistudio-chat-to-md.git"
   }
 }

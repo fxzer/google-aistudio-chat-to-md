@@ -6,10 +6,14 @@ const fs = require('fs');
 // 打印使用说明
 const printUsage = () => {
     console.log(`
-Usage: gemini-tomd <input> [output]
+Usage: gemini-tomd [options] <input> [output]
 
 Description:
   Convert Google AI Studio chat records to Markdown format.
+
+Options:
+  -t, --think    Include AI thinking process in the output
+  -h, --help     Show this help message
 
 Arguments:
   input   Path to input file or directory containing chat records
@@ -20,6 +24,10 @@ Arguments:
 Examples:
   # Convert directory (uses default output directory)
   gemini-tomd "./Google AI Studio"
+
+  # Convert with thinking process included
+  gemini-tomd -t "./Google AI Studio"
+  gemini-tomd --think "./Google AI Studio"
 
   # Convert single file (uses default output filename)
   gemini-tomd "Bookmark Organization And Suggestions"
@@ -52,9 +60,14 @@ const main = () => {
         process.exit(0);
     }
 
-    const inputPath = args[0];
+    // 解析选项参数
+    const includeThink = args.includes('-t') || args.includes('--think');
+    // 过滤掉选项参数，只保留路径参数
+    const pathArgs = args.filter(arg => arg !== '-t' && arg !== '--think');
+
+    const inputPath = pathArgs[0];
     // 不传第二个参数时使用 undefined，让 convert 函数自动判断默认值
-    const outputPath = args.length > 1 ? args[1] : undefined;
+    const outputPath = pathArgs.length > 1 ? pathArgs[1] : undefined;
 
     // 检查输入路径是否存在
     if (!fs.existsSync(inputPath)) {
@@ -63,7 +76,7 @@ const main = () => {
     }
 
     // 执行转换
-    convert(inputPath, outputPath);
+    convert(inputPath, outputPath, includeThink);
 };
 
 main();
